@@ -13,8 +13,7 @@ int main()
 	double result = 0.0;
 	char oper = '+';
 	
-    std::cout << "Hello World!\n";
-	std::cout << "Calculator console application" << endl << endl;
+	std::cout << "My amazing calculator :D" << endl << endl;
 	std::cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b" << endl;
 	
 	Calculator c;
