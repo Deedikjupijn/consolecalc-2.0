@@ -1,37 +1,25 @@
 // consolecalculator first visual studio application.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
-#include "Calculator.h"
+#include "Calculator.h" //add Calculator.h to the main cpp file (this file) to be called in.
 
-using namespace std;
+using namespace std; //
 
 int main()
 {
 	double x = 0.0;
 	double y = 0.0;
 	double result = 0.0;
-	char oper = '+';
+	char oper = '+'; //no clue what this does, prob importand so lets just leave it here. it also works whitout it.
 	
-	std::cout << "My amazing calculator :D" << endl << endl;
-	std::cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b" << endl;
+	std::cout << "My amazing calculator :D" << endl << endl; //amazing tekst
+	std::cout << "Type in a calculation to perform. Example: a+b | a-b | a*b | a/b" << endl; //even more amazing tekst
 	
 	Calculator c;
 	while (true)
 	{
 		cin >> x >> oper >> y;
-		result = c.Calculate(x, oper, y);
-		cout << "Result: " << result << endl;
+		result = c.Calculate(x, oper, y); //
+		cout << "Result: " << result << endl; //result of the calculation by adding the result that came out of the calculator.h file to the result tekst.
 	}
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
