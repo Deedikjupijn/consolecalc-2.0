@@ -15,7 +15,7 @@ int main()
 	
     std::cout << "Hello World!\n";
 	std::cout << "Calculator console application" << endl << endl;
-	std::cout << "Please enter the operation to perform. Format + | - | * | /" << endl;
+	std::cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b" << endl;
 	
 	Calculator c;
 	while (true)
